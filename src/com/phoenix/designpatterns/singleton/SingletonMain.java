@@ -5,8 +5,9 @@ public class SingletonMain {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		System.out.println("\n*******EARTH*****\n");
-		Earth.createLife();
-		
+		Earth earth = Earth.newInstance();
+		earth.createLife();
+		Earth earth1 = Earth.newInstance();
 		System.out.println("\n*******PRESIDENT*****\n");
 		President.representNation();
 		
